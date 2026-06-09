@@ -61,3 +61,31 @@ propagate information about reaching definitions and reachable uses, which
 then allows us to construct a data-dependence graph.
 
 [Markdown Export](rendered/5%20Dataflow%20Analysis.md)
+
+
+
+### 6: Data-flow analysis (Part 2): Abstract interpretation
+
+This chapter continues with dataflow analysis, and refines our iterative
+dataflow analysis algorithm from chapter 6 to the lattice-theoretic monotone
+framework. Using this framework, we can then apply abstract interpretation,
+which is a more general analysis not only of how the program computes (which
+are all the analyses from chapter 6), but also _what_ the program computes.
+Since this is more challenging, we need to abstract the values. Our example
+analysis checks if programs may have division by zero errors.
+
+[Markdown Export](rendered/6%20Abstract%20Interpretation.md)
+
+
+
+### 7: Interprocedural analysis
+
+This chapter continues the zero-analysis example, but considers what happens
+if you have functions that call other functions. We can either assume a
+function call can return anything, or we have to make our analysis
+interprocedural. This causes some challenges, for example if the same
+method is called from multiple locations. We counter this problem by making
+our analysis context-sensitive (using cloning in the example).
+
+[Markdown Export](rendered/7%20Interprocedural%20Analysis.md)
+
