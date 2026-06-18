@@ -89,3 +89,16 @@ our analysis context-sensitive (using cloning in the example).
 
 [Markdown Export](rendered/7%20Interprocedural%20Analysis.md)
 
+
+### 8: Program Slicing
+
+In this chapter we revisit control dependencies, and look at an alternative
+way to calculate them using the dominance frontier (a concept used for
+creating static single assignment form). By combining data and control
+dependencies, we can create the program dependence graph. This can be used
+to _slice_ programs, i.e., extract subsets of the program that are relevant
+for a given target slicing criterion. Since the examples are analysing Java
+code, the notebook focuses only on static slicing, although the concepts
+generalise well to dynamic slicing as covered in the lecture.
+
+[Markdown Export](rendered/8%20Program%20Dependence.md)
